@@ -24,7 +24,7 @@ Verify before installing:
 
 ```sh
 sha256sum -c hisax-<version>.tar.sha256
-openssl pkey -pubin -in release-public-key.pem -outform DER | openssl dgst -sha256
+openssl pkey -pubin -in release-public.pem -outform DER | openssl dgst -sha256
 # must print: 78d837dbd7f4e65bb7fd848253366e66b4095d87d9a24d8b6ffd1b1fa334bd0a
 tar -xf hisax-<version>.tar && (cd hisax-<version> && bash verify_release.sh .)   # "Bundle verified"
 ```
